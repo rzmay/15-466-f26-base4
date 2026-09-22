@@ -181,7 +181,7 @@ ChoiceStory::Passage *ChoiceStory::init()
 			.dialogue = {
 					"My neighbor's house is on the way to town.",
 					"His house looks warmer than mine."},
-			.choices = {{"Knock on his door", "neighbor_door"}, {"Go inside", "neighbor_house"}, {"Go inside", "neighbor_loot"}, {"Keep going to town", "town"}, {"Go back home", "house_outside"}},
+			.choices = {{"Knock on his door", "neighbor_door"}, {"Go inside", "neighbor_house"}, {"Loot the house", "neighbor_loot"}, {"Keep going to town", "town"}, {"Go back home", "house_outside"}},
 	};
 
 	passages["neighbor_door"] = new Passage{
@@ -311,8 +311,8 @@ ChoiceStory::Passage *ChoiceStory::init()
 									 "Surely at this temperature the ice is frozen solid, right?",
 									 "*crack*",
 									 "Oh no.",
-									 "I fall through the ice and am quickly swept away by the current."
-									 "My body goes numb before I know what is happening."
+									 "I fall through the ice and am quickly swept away by the current.",
+									 "My body goes numb before I know what is happening.",
 									 "My lungs fill with cold water."},
 			.ending = Ending::Drowned,
 	};
